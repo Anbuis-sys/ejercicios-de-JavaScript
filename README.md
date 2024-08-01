@@ -1,1 +1,1 @@
-Ejercicios de JavaScripts usando recursividad y matrices 
+Ejercicios de JavaScript usando recursividad y matrices 
