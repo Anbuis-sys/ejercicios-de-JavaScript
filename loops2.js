@@ -21,7 +21,7 @@ function numDiv(n) {
         return [n];
     } else {
         let mitad = n /2;
-        return [Math.floor(mitad), Math.ceil(mitad)]; //El comando Math.floor 
+        return [Math.floor(mitad), Math.ceil(mitad)]; //El comando Math.floor sirve para redondear en caso de que se ingrese una cifra impar
     }
     }
     
@@ -50,9 +50,10 @@ function numDiv(n) {
     
         let displayString;
     
-        if (users.length === 1) {
+        if (users.length === 1) {  //con esto se indica que mientras haya un usuario se mostrara el estado en linea
             displayString = `${users[0]} está en línea`;
-        } else if (users.length === 2) {
+        } else if (users.length === 2) { 
+
             displayString = `${users[0]} y ${users[1]} están en línea`;
         } else {
             displayString = `${users[0]}, ${users[1]} y ${users.length - 2} más están en línea`;
